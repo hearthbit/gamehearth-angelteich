@@ -1,0 +1,191 @@
+{
+  "id": "angelteich",
+  "name": { "de": "Angelteich", "en": "Fishing Pond" },
+  "version": "0.3.1",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "cover": "cover.svg",
+  "description": {
+    "de": "Reihum angeln am Familienteich: Fische fangen, im Laden verkaufen, bessere Ruten kaufen und das Sammelbuch füllen",
+    "en": "Take turns fishing at the family pond: catch fish, sell them at the shop, buy better rods and fill your collection book"
+  },
+  "repository": "https://github.com/hearthbit/gamehearth-angelteich",
+  "sdk": "^0.1.6",
+  "license": {
+    "code": "MIT",
+    "assets": "CC0-1.0"
+  },
+  "mode": "turn-based",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "server": true,
+  "client": "dist/client",
+  "roles": {
+    "player": {
+      "inputs": [
+        "touch",
+        "mouse",
+        "keyboard"
+      ],
+      "screen": "small"
+    }
+  },
+  "options": {
+    "runden": {
+      "label": {
+        "de": "Runden",
+        "en": "Rounds"
+      },
+      "type": "choice",
+      "default": 5,
+      "choices": [
+        {
+          "value": 3,
+          "label": {
+            "de": "3 Runden",
+            "en": "3 rounds"
+          }
+        },
+        {
+          "value": 5,
+          "label": {
+            "de": "5 Runden",
+            "en": "5 rounds"
+          }
+        },
+        {
+          "value": 8,
+          "label": {
+            "de": "8 Runden",
+            "en": "8 rounds"
+          }
+        }
+      ]
+    }
+  },
+  "items": {
+    "muenzen": {
+      "label": {
+        "de": "Münzen",
+        "en": "Coins"
+      }
+    },
+    "koeder": {
+      "label": {
+        "de": "Köder",
+        "en": "Bait"
+      }
+    },
+    "rute-bambus": {
+      "label": {
+        "de": "Bambusrute",
+        "en": "Bamboo rod"
+      }
+    },
+    "rute-profi": {
+      "label": {
+        "de": "Profirute",
+        "en": "Pro rod"
+      }
+    },
+    "rute-gold": {
+      "label": {
+        "de": "Goldrute",
+        "en": "Gold rod"
+      }
+    }
+  },
+  "stats": {
+    "groesster-fisch": {
+      "label": {
+        "de": "Größter Fisch (cm)",
+        "en": "Biggest fish (cm)"
+      },
+      "better": "higher"
+    },
+    "fische-gefangen": {
+      "label": {
+        "de": "Gefangene Fische",
+        "en": "Fish caught"
+      }
+    },
+    "siege": {
+      "label": {
+        "de": "Siege",
+        "en": "Wins"
+      }
+    }
+  },
+  "flags": {
+    "startpaket": {
+      "label": {
+        "de": "Startpaket abgeholt",
+        "en": "Starter pack collected"
+      }
+    },
+    "buch-goldfisch": {
+      "label": {
+        "de": "Sammelbuch: Goldfisch",
+        "en": "Collection book: Goldfish"
+      }
+    },
+    "buch-rotauge": {
+      "label": {
+        "de": "Sammelbuch: Rotauge",
+        "en": "Collection book: Roach"
+      }
+    },
+    "buch-barsch": {
+      "label": {
+        "de": "Sammelbuch: Barsch",
+        "en": "Collection book: Perch"
+      }
+    },
+    "buch-karpfen": {
+      "label": {
+        "de": "Sammelbuch: Karpfen",
+        "en": "Collection book: Carp"
+      }
+    },
+    "buch-forelle": {
+      "label": {
+        "de": "Sammelbuch: Forelle",
+        "en": "Collection book: Trout"
+      }
+    },
+    "buch-koi": {
+      "label": {
+        "de": "Sammelbuch: Koi",
+        "en": "Collection book: Koi"
+      }
+    },
+    "buch-aal": {
+      "label": {
+        "de": "Sammelbuch: Aal",
+        "en": "Collection book: Eel"
+      }
+    },
+    "buch-hecht": {
+      "label": {
+        "de": "Sammelbuch: Hecht",
+        "en": "Collection book: Pike"
+      }
+    },
+    "buch-riesenwels": {
+      "label": {
+        "de": "Sammelbuch: Riesenwels",
+        "en": "Collection book: Giant catfish"
+      }
+    },
+    "buch-koenigskarpfen": {
+      "label": {
+        "de": "Sammelbuch: Königskarpfen",
+        "en": "Collection book: King carp"
+      }
+    }
+  }
+}
